@@ -1,0 +1,7 @@
+.listOfGifs {
+    margin-inline: auto;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 1rem;
+}
