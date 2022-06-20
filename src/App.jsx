@@ -1,7 +1,7 @@
 import { Route } from 'wouter'
 import Home from './pages/home/Home'
 import Detail from './pages/detail/Detail'
-import ListOfGifs from './components/ListOfGifs/ListOfGifs'
+import SearchResults from './pages/searchResults/SearchResults'
 import './App.css'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <Route 
         path='/search/:keyword' 
-        component={ListOfGifs} 
+        component={SearchResults} 
       />
       <Route 
         path='/'
