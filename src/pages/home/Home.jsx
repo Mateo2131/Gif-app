@@ -1,7 +1,7 @@
 import { useLocation } from 'wouter'
 import { useState } from 'react'
-import UseGifs from '../../hooks/useGifs'
-import ListOfGifs from '../../components/ListOfGifs/ListOfGifs'
+import UseGifs from '@/hooks/useGifs'
+import ListOfGifs from '@/components/ListOfGifs/ListOfGifs'
 
 function Home() {
   const [keyword, setKeyword] = useState('')

@@ -1,6 +1,6 @@
-import ListOfGifs from '../../components/ListOfGifs/ListOfGifs'
-import Spinner from '../../components/Spinner/Spinner'
-import UseGifs from '../../hooks/useGifs'
+import ListOfGifs from '@/components/ListOfGifs/ListOfGifs'
+import Spinner from '@/components/Spinner/Spinner'
+import UseGifs from '@/hooks/useGifs'
 
 function SearchResults({ params }) {
   const { keyword } = params
