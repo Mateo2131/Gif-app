@@ -1,3 +1,47 @@
 .App {
+    min-height: 100vh;
+    padding-inline: 1rem;
+    margin-inline: auto;
+    max-width: 1200px;
+}
+
+.App-logo {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 20px 0;
+    width: 144px;
+}
+
+.App-logo img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.App-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1.6rem 0;
+}
+
+.Search-form {
+    display: flex;
+    justify-content: center;
+}
+
+.Search-form__btn {
+    border: 1px solid transparent;
     padding: 1rem;
+    background-color: #7f5af0;
+    color: #fffffe;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.Search-form__input {
+    border: 1px solid transparent;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: #fffffe;
+    outline: none;
 }

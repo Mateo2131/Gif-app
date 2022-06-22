@@ -1,9 +1,9 @@
 import Gif from '../Gif/Gif'
-import styles from './listOfGifs.module.css'
+import './listOfGifs.css'
 
 function ListOfGifs({gifs}) {
   return (
-    <div className={styles.listOfGifs}>
+    <div className='listOfGifs'>
       {
       gifs.map(({ id, title, url }) => (
         <Gif 

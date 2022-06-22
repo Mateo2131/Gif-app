@@ -19,15 +19,17 @@ function Home() {
 
   return (
     <>
-      <h3>Los gifs mas populares</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='Search-form'>
+        <button className='Search-form__btn'>Buscar</button>
         <input 
           type="text" 
           value={keyword} 
           placeholder='Search...'
           onChange={handleChange}
+          className='Search-form__input'
         />
       </form>
+      <h3 className='App-title'>Ultima Busqueda</h3>
       <ListOfGifs gifs={gifs} />
     </>
   )
