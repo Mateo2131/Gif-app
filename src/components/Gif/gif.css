@@ -4,10 +4,12 @@
 
 .gif-title {
     position: absolute;
-    bottom: 2px;
-    left: 4px;
+    bottom: 0px;
+    left: 0;
+    padding: 4px;
     color: #fff;
     font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .gif-image {

@@ -5,19 +5,6 @@
     max-width: 1200px;
 }
 
-.App-logo {
-    display: flex;
-    justify-content: center;
-    margin: 10px auto;
-    padding: 20px 0;
-    width: 144px;
-}
-
-.App-logo img {
-    object-fit: cover;
-    width: 100%;
-}
-
 .App-title {
     font-size: 3rem;
     font-weight: bold;

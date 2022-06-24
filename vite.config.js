@@ -10,7 +10,9 @@ export default defineConfig({
       usePolling: true
     }
   },
-  alias: {
-    '@': path.resolve(__dirname, 'src')
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
 })
