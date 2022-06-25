@@ -6,7 +6,11 @@ function Detail({ params }) {
   const {gifs} = useContext(GifsContext)
   const gif = gifs.find(singleGif => singleGif.id === params.id)
 
-  return <Gif {...gif} />
+  return (
+    <div className='Detail'>
+      <Gif {...gif} />
+    </div>
+  )
 }
 
 export default Detail

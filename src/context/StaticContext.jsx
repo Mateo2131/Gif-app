@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 
 const Context = React.createContext({
-    name: 'Sin-provider'
-});
+  name: 'Sin-provider'
+})
 
 export default Context

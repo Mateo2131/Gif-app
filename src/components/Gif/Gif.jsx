@@ -1,13 +1,17 @@
 import { Link } from 'wouter'
-import './gif.css'
+import {
+  GifContainer,
+  GifTitle,
+  GifImage
+} from './gifCss.js'
 
 function Gif({ title, id, url }) {
   return (
     <Link href={`/gif/${id}`}>
-      <div className='gif'>
-        <h4 className='gif-title'>{title}</h4>
-        <img src={url} alt={title} className='gif-image' />
-      </div>
+      <GifContainer>
+        <GifTitle>{title}</GifTitle>
+        <GifImage src={url} alt={title} />
+      </GifContainer>
     </Link>
   )
 }

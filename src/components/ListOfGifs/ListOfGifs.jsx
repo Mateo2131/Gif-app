@@ -1,20 +1,13 @@
 import Gif from '../Gif/Gif'
-import './listOfGifs.css'
+import { GifsContainer } from './listOfGifsCss.js'
 
-function ListOfGifs({gifs}) {
+function ListOfGifs({ gifs }) {
   return (
-    <div className='listOfGifs'>
-      {
-      gifs.map(({ id, title, url }) => (
-        <Gif 
-        id={id} 
-        key={id} 
-        title={title} 
-        url={url} 
-        />
-      ))
-      }
-    </div>
+    <GifsContainer>
+      {gifs.map(({ id, title, url }) => (
+        <Gif id={id} key={id} title={title} url={url} />
+      ))}
+    </GifsContainer>
   )
 }
 

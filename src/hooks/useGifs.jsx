@@ -1,6 +1,6 @@
-import { useEffect,useState, useContext } from "react"
-import GetGifs from "@/services/getGifs"
-import GifsContext from "@/context/GifsContext"
+import { useEffect,useState, useContext } from 'react'
+import GetGifs from '@/services/getGifs'
+import GifsContext from '@/context/GifsContext'
 
 function UseGifs({ keyword } = {keyword: null}) {
   const { gifs, setGifs } = useContext(GifsContext)

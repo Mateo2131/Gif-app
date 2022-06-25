@@ -1,10 +1,10 @@
-import './spinner.css'
+import { Loader , LoaderContainer } from './SpinnerCss'
 
 function Spinner() {
   return (
-    <div className='spinner'>
-      <span className='loader'></span>
-    </div>
+    <LoaderContainer>
+      <Loader />
+    </LoaderContainer>
   )
 }
 

@@ -1,34 +1,39 @@
 .App {
-    min-height: 100vh;
-    padding-inline: 1rem;
-    margin-inline: auto;
-    max-width: 1200px;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  margin-inline: auto;
+  max-width: 1200px;
 }
 
 .App-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 1.6rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1.6rem 0;
 }
 
 .Search-form {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .Search-form__btn {
-    border: 1px solid transparent;
-    padding: 1rem;
-    background-color: #7f5af0;
-    color: #fffffe;
-    font-size: 1.6rem;
-    font-weight: bold;
+  border: 1px solid transparent;
+  padding: 1rem;
+  background-color: #7f5af0;
+  color: #fffffe;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .Search-form__input {
-    border: 1px solid transparent;
-    padding: 1rem;
-    font-size: 1.6rem;
-    background-color: #fffffe;
-    outline: none;
+  border: 1px solid transparent;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: #fffffe;
+  outline: none;
+}
+
+.Detail {
+  max-width: 600px;
+  margin: 5rem auto;
 }

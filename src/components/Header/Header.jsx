@@ -1,15 +1,49 @@
 import { Link } from 'wouter'
-import './header.css'
+import { useState, useEffect } from 'react'
+import { FaGripLines } from 'react-icons/fa'
+import './styles.js'
+import {
+  AppHeader,
+  AppLogo,
+  Logo,
+  AppNav,
+  AppNavList,
+  AppNavItem,
+  AppNavButton
+} from './styles'
 
 function Header() {
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    window.addEventListener('resize', () => setScreenWidth(window.innerWidth))
+  }, [])
+
+  const toggleNav = () => setToggleMenu(!toggleMenu)
+
   return (
-    <header className='App-header'>
+    <AppHeader>
       <Link to='/'>
-        <figure className='App-logo'>
-          <img alt='Giffy logo' src='/logo.png' />
-        </figure>
+        <AppLogo>
+          <Logo src='/logo.png' alt='Giffy logo' />
+        </AppLogo>
       </Link>
-    </header>
+      <AppNav>
+        {toggleMenu || screenWidth >= 600 ? (
+          <AppNavList>
+            <AppNavItem>Reactions</AppNavItem>
+            <AppNavItem>Stickers</AppNavItem>
+            <AppNavItem>Entertainment</AppNavItem>
+            <AppNavItem>Login</AppNavItem>
+            <AppNavItem>Register</AppNavItem>
+          </AppNavList>
+        ) : null}
+        <AppNavButton onClick={toggleNav}>
+          <FaGripLines />
+        </AppNavButton>
+      </AppNav>
+    </AppHeader>
   )
 }
 
