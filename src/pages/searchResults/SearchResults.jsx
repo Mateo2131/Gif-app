@@ -4,9 +4,16 @@ import UseGifs from '@/hooks/useGifs'
 
 function SearchResults({ params }) {
   const { keyword } = params
-  const { loading, gifs } = UseGifs({ keyword })
+  const { loading, gifs , setPage } = UseGifs({ keyword })
 
-  return <>{loading ? <Spinner /> : <ListOfGifs gifs={gifs} />}</>
+  const handleNextPage = () => setPage(prevPage => prevPage + 1)
+
+  return (
+    <>
+      {loading ? <Spinner /> : <ListOfGifs gifs={gifs} />}
+      <button onClick={handleNextPage}>Get next Page</button>
+    </>
+  )
 }
 
 export default SearchResults
