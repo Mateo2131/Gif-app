@@ -2,6 +2,7 @@ import { useLocation } from 'wouter'
 import { useState } from 'react'
 import UseGifs from '@/hooks/useGifs'
 import ListOfGifs from '@/components/ListOfGifs/ListOfGifs'
+import Trending from '@/components/Trending/trending'
 
 function Home() {
   const [keyword, setKeyword] = useState('')
@@ -29,6 +30,7 @@ function Home() {
           className='Search-form__input'
         />
       </form>
+      <Trending />
       <h3 className='App-title'>Ultima Busqueda</h3>
       <ListOfGifs gifs={gifs} />
     </>

@@ -32,9 +32,6 @@ function Header() {
       <AppNav>
         {toggleMenu || screenWidth >= 600 ? (
           <AppNavList>
-            <AppNavItem>Reactions</AppNavItem>
-            <AppNavItem>Stickers</AppNavItem>
-            <AppNavItem>Entertainment</AppNavItem>
             <AppNavItem>Login</AppNavItem>
             <AppNavItem>Register</AppNavItem>
           </AppNavList>
