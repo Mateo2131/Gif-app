@@ -2,7 +2,7 @@ import {API_KEY, API_URL} from '@/secret'
 
 const fromApiResponseToGifs = apiResponse => {
   const { data = [] } = apiResponse
-  return data
+  return data.slice(0, 5)
 }
 
 export default function getTrending() {
